@@ -210,9 +210,9 @@ main {
     background-color: white;
     padding: 10px;
     border-radius: 15px;
-    width: 100%;
+    width: 90%;
     font-family: 'Raleway', sans-serif;
-    height: 275px;
+    height: 300px;
     overflow: hidden;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
@@ -397,70 +397,560 @@ footer {
     justify-content: space-around;
 }
 
-/* MEDIA QUERIES Tablettes */
-@media screen and (max-width: 900px) {
-    .activites-conteneur {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 25px;
-    }
-    .hebergements-container {
-        flex-direction: column;
+
+
+
+/* =========================================================
+   TABLETTE
+   De 768px à 1080px
+   ========================================================= */
+
+@media screen and (min-width: 768px) and (max-width: 1080px) {
+
+    /* -------------------------
+       HEADER
+       ------------------------- */
+
+    header {
+        padding: 20px 30px;
     }
 
-    .Hebergement,
-    .populaires {
+    .Header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo {
+        width: 100px;
+    }
+
+    nav {
+        display: flex;
+        gap: 30px;
+    }
+
+    .head {
+        font-size: 15px;
+    }
+
+
+    /* -------------------------
+       MAIN
+       ------------------------- */
+
+    main {
+        padding: 0 30px;
+    }
+
+
+    /* -------------------------
+       INTRODUCTION
+       ------------------------- */
+
+    .Introduction h1 {
+        font-size: 24px;
+    }
+
+    .Introduction p {
+        font-size: 15px;
+    }
+
+
+    /* -------------------------
+       RECHERCHE
+       ------------------------- */
+
+    .recherche {
         width: 100%;
+        max-width: 600px;
     }
 
-    .Types-hébergements {
-        grid-template-columns: repeat(2, 1fr);
-        padding: 20px;
-        gap: 20px;
-    }
-    }
-
-    .colonne {
-        gap: 25px;
+    .recherche input {
+        flex: 1;
+        min-width: 0;
     }
 
 
-/* MEDIA QUERIES Smartphones */
-@media screen and (max-width: 600px) {
-    body {
-        padding: 20px;
-    }
-     .location {
-        flex-direction: column;
+    /* -------------------------
+       FILTRES
+       ------------------------- */
+
+    .filtres {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 15px;
     }
 
-    .Hebergement,
-    .populaires {
-        width: 100%;
+    .filtre {
+        height: 50px;
     }
 
-    .Types-hébergements {
-        grid-template-columns: 1fr;
-    }
 
-    .activites-conteneur {
-        grid-template-columns: 1fr;
-        gap: 20px;
+    /* -------------------------
+       HÉBERGEMENTS + POPULAIRES
+       ------------------------- */
+
+    .location {
         display: flex;
         flex-direction: column;
+        gap: 30px;
     }
 
-    .colonne {
+    .Hebergement {
+        width: 100%;
+    }
+
+    .Types-hébergements {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .Types {
+        width: 100%;
+    }
+
+    .Types img {
+        width: 100%;
+        height: 160px;
+        object-fit: cover;
+    }
+
+
+    /* -------------------------
+       POPULAIRES
+       ------------------------- */
+
+    .populaires {
+        width: 100%;
+    }
+
+    .popular-card {
+        width: 100%;
+    }
+
+    .popular-card .img {
+        width: 35%;
+    }
+
+    .popular-card .img img {
+        width: 100%;
+        height: 140px;
+        object-fit: cover;
+    }
+
+    .popular-content {
+        flex: 1;
+    }
+
+
+    /* -------------------------
+       ACTIVITÉS
+       ------------------------- */
+
+    .Activites {
+        margin-top: 40px;
+    }
+
+    .activites-conteneur {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
         gap: 20px;
     }
 
     .carte-tres-grande,
     .carte-tres-petite {
-        height: auto;
         width: 100%;
     }
 
     .carte-tres-grande img,
     .carte-tres-petite img {
-        height: 220px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .colonne {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+
+    /* -------------------------
+       FOOTER
+       ------------------------- */
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        padding: 40px 30px;
+    }
+
+    footer > div {
+        flex: 1;
+    }
+}
+
+/* =========================================================
+   SMARTPHONE
+   Jusqu'à 767px
+   ========================================================= */
+
+@media screen and (max-width: 767px) {
+
+    /* -------------------------
+       RÉGLAGES GÉNÉRAUX
+       ------------------------- */
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    main {
+        padding: 0 20px;
+    }
+
+
+    /* -------------------------
+       HEADER
+       ------------------------- */
+
+    header {
+        padding: 20px 20px 0;
+    }
+
+    .Header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .logo {
+        width: 90px;
+    }
+
+    nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        gap: 0;
+    }
+
+    .head {
+        width: 50%;
+        text-align: center;
+        padding: 15px 5px;
+        font-size: 14px;
+    }
+
+
+    /* -------------------------
+       INTRODUCTION
+       ------------------------- */
+
+    .Introduction {
+        margin-top: 30px;
+    }
+
+    .Introduction h1 {
+        font-size: 22px;
+        line-height: 1.3;
+        margin-bottom: 10px;
+    }
+
+    .Introduction p {
+        font-size: 14px;
+    }
+
+
+    /* -------------------------
+       BARRE DE RECHERCHE
+       ------------------------- */
+
+    .recherche {
+        display: flex;
+        width: 100%;
+        height: 50px;
+        margin: 25px 0;
+    }
+
+    .Localisation {
+        width: 50px;
+        min-width: 50px;
+    }
+
+    .recherche input {
+        width: calc(100% - 100px);
+        min-width: 0;
+        font-size: 14px;
+    }
+
+    .recherche button {
+        width: 50px;
+        min-width: 50px;
+
+        /* Permet d'afficher uniquement l'icône
+           si ton CSS contient l'icône */
+        font-size: 0;
+    }
+
+
+    /* -------------------------
+       FILTRES
+       ------------------------- */
+
+    .filtres {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 20px;
+    }
+
+    .filtres strong {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .filtre {
+        height: 50px;
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 0 12px 0 0;
+    }
+
+    .filtre span {
+        font-size: 13px;
+        white-space: nowrap;
+    }
+
+    .icone {
+        width: 45px;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    /* -------------------------
+       INFORMATION
+       ------------------------- */
+
+    .information {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin: 25px 0;
+        font-size: 13px;
+        line-height: 1.4;
+    }
+
+
+    /* -------------------------
+       LOCATION
+       ------------------------- */
+
+    .location {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+
+    /* -------------------------
+       HÉBERGEMENTS
+       ------------------------- */
+
+    .Hebergement {
+        width: 100%;
+        order: 1;
+    }
+
+    .Hebergement h2 {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    .Types-hébergements {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .Types {
+        width: 100%;
+        min-height: 0;
+    }
+
+    .Types img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+    }
+
+    .Contenu {
+        padding: 10px 15px 15px;
+    }
+
+    .Contenu h3 {
+        font-size: 16px;
+        margin: 0 0 5px;
+    }
+
+    .Contenu p {
+        font-size: 14px;
+        margin: 5px 0;
+    }
+
+    .stars {
+        font-size: 13px;
+    }
+
+    .Affiche {
+        font-size: 16px;
+        font-weight: bold;
+        margin-top: 25px;
+    }
+
+
+    /* -------------------------
+       PLUS POPULAIRES
+       ------------------------- */
+
+    .populaires {
+        width: 100%;
+        order: 0;
+        padding: 20px;
+    }
+
+    .Titres-populaires h2 {
+        font-size: 22px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .popular-card {
+        display: flex;
+        width: 100%;
+        height: 140px;
+        margin-bottom: 20px;
+    }
+
+    .popular-card .img {
+        width: 40%;
+        min-width: 40%;
+        height: 140px;
+    }
+
+    .popular-card .img img {
+        width: 100%;
+        height: 140px;
+        object-fit: cover;
+    }
+
+    .popular-content {
+        padding: 10px 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .popular-content h3 {
+        font-size: 15px;
+        margin: 0;
+    }
+
+    .popular-content p {
+        font-size: 13px;
+        margin: 5px 0;
+    }
+
+    .star {
+        font-size: 12px;
+    }
+
+
+    /* -------------------------
+       ACTIVITÉS
+       ------------------------- */
+
+    .Activites {
+        margin-top: 40px;
+    }
+
+    .Activites h2 {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    .activites-conteneur {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .carte-tres-grande,
+    .carte-tres-petite {
+        width: 100%;
+        height: 200px;
+    }
+
+    .carte-tres-grande img,
+    .carte-tres-petite img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+    }
+
+    .carte-tres-grande h3,
+    .carte-tres-petite h3 {
+        margin: 10px 15px;
+        font-size: 15px;
+    }
+
+    .colonne {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+
+    /* -------------------------
+       FOOTER
+       ------------------------- */
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        padding: 35px 25px;
+        margin-top: 40px;
+    }
+
+    footer > div {
+        width: 100%;
+    }
+
+    footer h3 {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    footer p {
+        font-size: 14px;
+        margin: 8px 0;
     }
 }
