@@ -1,0 +1,466 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: #000;
+     font-family: 'Raleway', sans-serif;
+}
+
+
+/* HEADER */
+
+header {
+    padding: 20px 15px 35px;
+}
+
+.Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+    
+    
+}
+
+nav {
+    display: flex;
+    gap: 90px;
+}
+
+nav a {
+    color: #000;
+    text-decoration: none;
+}
+
+.head:hover{
+    color: #0065fc;
+    border-top:  blue;
+
+}
+
+
+/* INTRODUCTION */
+
+main {
+    padding: 0 50px;
+}
+
+.Introduction h1 {
+    font-size: 22px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 8px;  
+}
+
+.Introduction p {
+    font-size: 17px;
+    margin: 0;
+}
+
+
+/* RECHERCHE */
+
+.recherche {
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+    width: 420px;
+    height: 50px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+/* Carré avec l'icône localisation */
+.Localisation {
+    width: 55px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #f2f2f2;
+
+    font-size: 20px;
+}
+
+/* Champ Marseille, France */
+.recherche input {
+    height: 50px;
+    width: 250px;
+    border: none;
+    outline: none;
+    padding: 0 15px;
+    font-size: 19px;
+    font-weight:bolder;
+}
+
+/* Bouton Rechercher */
+.recherche button {
+    height: 50px;
+    padding: 0 20px;
+    border: none;
+    background-color: #0065fc;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* FILTRES */
+.filtres {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin: 30px 0;
+}
+
+.filtres strong {
+    font-size: 18px;
+}
+
+.filtre {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    height: 50px;
+    padding: 0 20px 0 0;
+
+    background-color: white;
+    border: 2px solid #ddd;
+    border-radius: 30px;
+
+    font-size: 17px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+/* Le rond bleu derrière l'icône */
+.icone {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #deebff;
+    border-radius: 50%;
+
+    color: #0065fc;
+    font-size: 20px;
+}
+
+.location{
+    display: flex;
+    gap: 20px;
+}
+
+.information span{
+  color: #0065fc;
+
+}
+
+.information{
+    padding-bottom: 30px;
+}
+
+/* HÉBERGEMENTS */
+
+.Hebergement {
+   
+    padding: 30px;
+    border-radius: 15px;
+    display: flex;
+    width: 60%;
+    background-color: #f2f2f2;
+    flex-direction: column;
+
+    
+}
+
+.hebergements-container {
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    
+}
+
+
+.Types-hébergements{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #f2f2f2;
+    gap: 20px;
+    justify-content: space-around;
+    flex: 2;
+    padding: 30px;
+ 
+}
+.Types {
+    background-color: white;
+    padding: 10px;
+    border-radius: 15px;
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    height: 275px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.Types img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.stars{
+    color: #0065fc;
+    font-size: 11px;
+    
+}
+
+.star{
+    margin-top: 50px;
+    color: #0065fc;
+    font-size: 11px;
+}
+
+.populaires{
+    flex: 1;
+    width: 50%;
+    border-radius: 15px;
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+
+}
+
+.Titres-populaires{
+    flex-direction: column;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+
+.Affiche{
+    display: inline-block;
+    margin-top: 25px;
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.Titres-populaires h2{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.popular-content{
+    background-color: white;
+    padding: 10px;
+    border-radius: 15px;
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+  
+
+}
+
+.popular-card img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 15px 0px 0px 15px;
+    
+      
+}
+
+.popular-card{
+    display: flex;
+    background-color: white;
+    width: 90%;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.populaires{
+    gap: 30px; 
+}
+
+.img{
+    padding: 20px;
+   
+}
+
+.popular-content h3{
+    margin-bottom: 0;
+}
+
+.popular-content p{
+    margin-top: 0px;
+}
+
+.carte-tres-grande{
+    width: 100%;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    height: 510px;
+
+}
+
+.carte-tres-grande h3{
+    margin-top: 20px;
+}
+
+
+.carte-tres-grande img{
+    height: 450px;
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.carte-tres-petite{
+    height: 235px;
+    width: 100%;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+
+}
+
+.carte-tres-petite img{
+    height: 180px;
+    width: 100%;
+ 
+}
+
+.activites-conteneur{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+   
+}
+
+.activites-conteneur h3{
+    margin: 10px;
+}
+
+.colonne{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.Activites h3 {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.Activites h2 {
+    margin-top: 50px;
+
+}
+
+
+/* FOOTER */
+
+footer {
+    margin-top: 50px;
+    padding: 40px 50px;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* MEDIA QUERIES Tablettes */
+@media screen and (max-width: 900px) {
+    .activites-conteneur {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+    .hebergements-container {
+        flex-direction: column;
+    }
+
+    .Hebergement,
+    .populaires {
+        width: 100%;
+    }
+
+    .Types-hébergements {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 20px;
+        gap: 20px;
+    }
+    }
+
+    .colonne {
+        gap: 25px;
+    }
+
+
+/* MEDIA QUERIES Smartphones */
+@media screen and (max-width: 600px) {
+    body {
+        padding: 20px;
+    }
+     .location {
+        flex-direction: column;
+    }
+
+    .Hebergement,
+    .populaires {
+        width: 100%;
+    }
+
+    .Types-hébergements {
+        grid-template-columns: 1fr;
+    }
+
+    .activites-conteneur {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .colonne {
+        gap: 20px;
+    }
+
+    .carte-tres-grande,
+    .carte-tres-petite {
+        height: auto;
+        width: 100%;
+    }
+
+    .carte-tres-grande img,
+    .carte-tres-petite img {
+        height: 220px;
+    }
+}
