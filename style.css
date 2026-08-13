@@ -707,23 +707,25 @@ footer {
         /* Permet d'afficher uniquement l'icône
            si ton CSS contient l'icône */
         
-    
-    .search-text {
-    display: none;
+    .search-button .search-text {
+    display: none !important;
 }
 
-.search-icon {
-    display: block;
+.search-button .search-icon {
+    display: block !important;
+    font-size: 18px;
 }
 
 .search-button {
-    width: 50px;
+    width: 50px !important;
     height: 50px;
-    padding: !important;
+    min-width: 50px;
+    padding: 0 !important;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+   
 
 
     /* -------------------------
