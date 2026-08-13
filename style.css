@@ -702,29 +702,26 @@ footer {
         min-width: 0;
         font-size: 14px;
     }
+   /* Bouton de recherche smartphone */
 
-
-        /* Permet d'afficher uniquement l'icône
-           si ton CSS contient l'icône */
-        
-    .search-button .search-text {
+   .recherche .search-text {
     display: none !important;
-}
+    }
 
-.search-button .search-icon {
+   .recherche .search-icon {
     display: block !important;
-    font-size: 18px;
-}
+    font-size: 18px !important;
+    }
 
-.search-button {
+   .recherche .search-button {
     width: 50px !important;
-    height: 50px;
     min-width: 50px;
+    height: 50px;
     padding: 0 !important;
     display: flex;
     justify-content: center;
     align-items: center;
-}
+    }
    
 
 
