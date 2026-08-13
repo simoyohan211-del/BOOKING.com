@@ -114,6 +114,14 @@ main {
 }
 
 
+
+
+.search-icon {
+    display: block;
+}
+
+
+
 /* FILTRES */
 .filtres {
     display: flex;
@@ -703,6 +711,23 @@ footer {
            si ton CSS contient l'icône */
         font-size: 0;
     }
+    .search-text {
+    display: none;
+}
+
+.search-icon {
+    display: block;
+}
+
+.search-button {
+    width: 50px;
+    height: 50px;
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
     /* -------------------------
