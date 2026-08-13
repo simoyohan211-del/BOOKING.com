@@ -117,7 +117,7 @@ main {
 
 
 .search-icon {
-    display: block;
+    display: none;
 }
 
 
@@ -703,14 +703,11 @@ footer {
         font-size: 14px;
     }
 
-    .recherche button {
-        width: 50px;
-        min-width: 50px;
 
         /* Permet d'afficher uniquement l'icône
            si ton CSS contient l'icône */
-        font-size: 0;
-    }
+        
+    
     .search-text {
     display: none;
 }
@@ -722,8 +719,7 @@ footer {
 .search-button {
     width: 50px;
     height: 50px;
-    padding: 0;
-
+    padding: !important;
     display: flex;
     justify-content: center;
     align-items: center;
