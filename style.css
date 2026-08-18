@@ -481,12 +481,6 @@ footer {
         flex: 1;
         min-width: 0;
     }
-    .search-icon {
-        display: block !important;
-    }
-    .search-text {
-        display: none !important;
-    }
 
 
     /* -------------------------
