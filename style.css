@@ -52,9 +52,7 @@ main {
 
 .Introduction h1 {
     font-size: 22px;
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-bottom: 8px;  
+    margin: 0 0 10px 0;
 }
 
 .Introduction p {
@@ -113,14 +111,13 @@ main {
     cursor: pointer;
 }
 
-
-
-
+/* Par défaut : tablette + ordinateur */
 .search-icon {
-    display: none;
+    display: none !important;
 }
-.search-text{
-    display: block;
+
+.search-text {
+    display: inline !important;
 }
 
 
@@ -707,23 +704,20 @@ footer {
     }
    /* Bouton de recherche smartphone */
 
-   .recherche .search-text {
-    display: none !important;
+     .search-icon {
+        display: inline-block !important;
     }
 
-   .recherche .search-icon {
-    display: block !important;
-    font-size: 18px !important;
+    .search-text {
+        display: none !important;
     }
 
-   .recherche .search-button {
-    width: 50px !important;
-    min-width: 50px;
-    height: 50px;
-    padding: 0 !important;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    .search-button {
+        width: 50px;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
    
 
