@@ -436,68 +436,44 @@ footer {
     gap: 350px;
 }
 
-
-
 /* =========================================================
    TABLETTE
-   De 768px à 1080px
+   768px → 1080px
    ========================================================= */
 
 @media screen and (min-width: 768px) and (max-width: 1080px) {
 
-    /* -------------------------
-       HEADER
-       ------------------------- */
+    /* ---------- GÉNÉRAL ---------- */
 
     header {
-        padding: 20px 30px;
+        padding: 25px 30px;
     }
-
-    .Header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .logo {
-        width: 100px;
-    }
-
-    nav {
-        display: flex;
-        gap: 30px;
-    }
-
-    .head {
-        font-size: 15px;
-    }
-
-
-    /* -------------------------
-       MAIN
-       ------------------------- */
 
     main {
         padding: 0 30px;
     }
 
+    /* ---------- HEADER ---------- */
 
-    /* -------------------------
-       INTRODUCTION
-       ------------------------- */
-
-    .Introduction h1 {
-        font-size: 24px;
+    .Header {
+        width: 100%;
     }
 
-    .Introduction p {
-        font-size: 15px;
+    .logo {
+        width: 90px;
+        margin-left: 0;
     }
 
+    nav {
+        gap: 30px;
+    }
 
-    /* -------------------------
-       RECHERCHE
-       ------------------------- */
+    nav a {
+        top: 0;
+        padding: 15px 0;
+    }
+
+    /* ---------- RECHERCHE ---------- */
 
     .recherche {
         width: 100%;
@@ -506,235 +482,209 @@ footer {
 
     .recherche input {
         flex: 1;
+        width: auto;
         min-width: 0;
     }
 
-
-    /* -------------------------
-       FILTRES
-       ------------------------- */
+    /* ---------- FILTRES ---------- */
 
     .filtres {
         display: flex;
         flex-wrap: wrap;
-        align-items: center;
-        gap: 15px;
+        gap: 12px;
     }
 
     .filtre {
-        height: 50px;
+        max-width: 100%;
     }
 
-
-    /* -------------------------
-       HÉBERGEMENTS + POPULAIRES
-       ------------------------- */
+    /* ---------- HÉBERGEMENTS ---------- */
 
     .location {
-        display: flex;
         flex-direction: column;
         gap: 30px;
     }
 
     .Hebergement {
         width: 100%;
+        padding: 25px;
     }
 
     .Types-hébergements {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 20px;
     }
 
     .Types {
-        width: 100%;
+        min-height: 220px;
     }
 
     .Types img {
-        width: 100%;
-        height: 160px;
-        object-fit: cover;
+        height: 140px;
     }
 
-
-    /* -------------------------
-       POPULAIRES
-       ------------------------- */
+    /* ---------- POPULAIRES ---------- */
 
     .populaires {
         width: 100%;
+        padding: 25px;
     }
 
     .popular-card {
         width: 100%;
+        height: 150px;
     }
 
     .popular-card .img {
         width: 35%;
+        flex-basis: 35%;
+        height: 150px;
     }
 
     .popular-card .img img {
-        width: 100%;
-        height: 140px;
-        object-fit: cover;
+        height: 150px;
     }
 
     .popular-content {
-        flex: 1;
+        width: 65%;
     }
 
-
-    /* -------------------------
-       ACTIVITÉS
-       ------------------------- */
+    /* ---------- ACTIVITÉS ---------- */
 
     .Activites {
-        margin-top: 40px;
+        width: 100%;
     }
 
     .activites-conteneur {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 20px;
     }
 
-    .carte-tres-grande,
-    .carte-tres-petite {
-        width: 100%;
+    .carte-tres-grande {
+        height: 400px;
     }
 
-    .carte-tres-grande img,
+    .carte-tres-grande img {
+        height: 340px;
+    }
+
+    .carte-tres-petite {
+        height: 190px;
+    }
+
     .carte-tres-petite img {
-        width: 100%;
-        object-fit: cover;
+        height: 140px;
     }
 
     .colonne {
-        display: flex;
-        flex-direction: column;
         gap: 20px;
     }
 
-
-    /* -------------------------
-       FOOTER
-       ------------------------- */
+    /* ---------- FOOTER ---------- */
 
     footer {
-        display: flex;
-        justify-content: space-between;
-        gap: 30px;
-        padding: 40px 30px;
-    }
-
-    footer > div {
-        flex: 1;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 25px;
+        padding: 35px 30px;
     }
 }
 
+
 /* =========================================================
    SMARTPHONE
-   Jusqu'à 767px
+   0 → 767px
    ========================================================= */
 
 @media screen and (max-width: 767px) {
 
-    /* -------------------------
-       RÉGLAGES GÉNÉRAUX
-       ------------------------- */
-
-    * {
-        box-sizing: border-box;
-    }
+    /* ---------- GÉNÉRAL ---------- */
 
     body {
-        margin: 0;
         width: 100%;
         overflow-x: hidden;
     }
 
     main {
+        width: 100%;
         padding: 0 20px;
     }
 
-
-    /* -------------------------
-       HEADER
-       ------------------------- */
+    /* ---------- HEADER ---------- */
 
     header {
         padding: 20px 20px 0;
     }
 
     .Header {
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 25px;
+        gap: 20px;
     }
 
     .logo {
-        width: 90px;
+        width: 85px;
+        margin-left: 0;
     }
 
     nav {
         width: 100%;
-        display: flex;
-        justify-content: space-around;
         gap: 0;
+        justify-content: space-around;
     }
 
-    .head {
+    nav a {
+        top: 0;
         width: 50%;
-        text-align: center;
         padding: 15px 5px;
+        text-align: center;
         font-size: 14px;
     }
 
-
-    /* -------------------------
-       INTRODUCTION
-       ------------------------- */
+    /* ---------- INTRODUCTION ---------- */
 
     .Introduction {
         margin-top: 30px;
     }
 
     .Introduction h1 {
-        font-size: 22px;
+        font-size: 21px;
         line-height: 1.3;
-        margin-bottom: 10px;
     }
 
     .Introduction p {
         font-size: 14px;
     }
 
-
-    /* -------------------------
-       BARRE DE RECHERCHE
-       ------------------------- */
+    /* ---------- RECHERCHE ---------- */
 
     .recherche {
-        display: flex;
         width: 100%;
+        max-width: 100%;
         height: 50px;
         margin: 25px 0;
     }
 
     .Localisation {
+        flex: 0 0 50px;
         width: 50px;
-        min-width: 50px;
     }
 
     .recherche input {
-        width: calc(100% - 100px);
+        flex: 1;
+        width: auto;
         min-width: 0;
         font-size: 14px;
     }
-   /* Bouton de recherche smartphone */
 
-     .search-icon {
+    .recherche button {
+        flex: 0 0 50px;
+        width: 50px;
+        padding: 0;
+    }
+
+    .search-icon {
         display: inline-block !important;
     }
 
@@ -742,223 +692,210 @@ footer {
         display: none !important;
     }
 
-    .search-button {
-        width: 50px;
-        padding: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-   
-
-
-    /* -------------------------
-       FILTRES
-       ------------------------- */
+    /* ---------- FILTRES ---------- */
 
     .filtres {
+        width: 100%;
         display: flex;
         flex-wrap: wrap;
-        gap: 12px;
-        margin-top: 20px;
+        gap: 10px;
     }
 
     .filtres strong {
         width: 100%;
-        margin-bottom: 5px;
     }
 
     .filtre {
-        height: 50px;
         max-width: 100%;
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        padding: 0 12px 0 0;
+        height: 48px;
+        padding-right: 10px;
+        gap: 7px;
     }
 
     .filtre span {
-        font-size: 13px;
-        white-space: nowrap;
+        font-size: 12px;
+        white-space: normal;
     }
 
     .icone {
-        width: 45px;
-        height: 45px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        flex: 0 0 43px;
+        width: 43px;
+        height: 43px;
     }
 
-
-    /* -------------------------
-       INFORMATION
-       ------------------------- */
+    /* ---------- INFORMATION ---------- */
 
     .information {
+        width: 100%;
         display: flex;
-        align-items: center;
-        gap: 10px;
+        align-items: flex-start;
+        gap: 8px;
         margin: 25px 0;
         font-size: 13px;
         line-height: 1.4;
     }
 
-
-    /* -------------------------
-       LOCATION
-       ------------------------- */
+    /* ---------- LOCATION ---------- */
 
     .location {
+        width: 100%;
         display: flex;
         flex-direction: column;
-        gap: 30px;
+        gap: 25px;
     }
 
-
-    /* -------------------------
+    /* =====================================================
        HÉBERGEMENTS
-       ------------------------- */
+       ===================================================== */
 
     .Hebergement {
         width: 100%;
-        order: 1;
+        padding: 20px;
+        order: 2;
     }
 
     .Hebergement h2 {
-        font-size: 22px;
+        font-size: 21px;
         margin-bottom: 20px;
     }
 
     .Types-hébergements {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 18px;
     }
 
     .Types {
         width: 100%;
+        height: auto;
         min-height: 0;
+        padding: 5px;
     }
 
     .Types img {
         width: 100%;
-        height: 180px;
+        height: 150px;
         object-fit: cover;
     }
 
     .Contenu {
-        padding: 10px 15px 15px;
+        padding: 8px 10px 10px;
     }
 
     .Contenu h3 {
-        font-size: 16px;
+        font-size: 15px;
         margin: 0 0 5px;
     }
 
     .Contenu p {
-        font-size: 14px;
+        font-size: 13px;
         margin: 5px 0;
     }
 
     .stars {
-        font-size: 13px;
+        font-size: 11px;
+        margin-left: 0;
     }
 
     .Affiche {
-        font-size: 16px;
-        font-weight: bold;
-        margin-top: 25px;
+        font-size: 15px;
+        margin-top: 20px;
     }
 
-
-    /* -------------------------
-       PLUS POPULAIRES
-       ------------------------- */
+    /* =====================================================
+       POPULAIRES
+       ===================================================== */
 
     .populaires {
         width: 100%;
-        order: 0;
         padding: 20px;
+        order: 1;
+        gap: 18px;
     }
 
     .Titres-populaires h2 {
-        font-size: 22px;
-        display: flex;
+        font-size: 20px;
         justify-content: space-between;
         align-items: center;
     }
 
     .popular-card {
-        display: flex;
         width: 100%;
-        height: 140px;
-        margin-bottom: 20px;
+        height: 125px;
+        min-height: 125px;
+        margin: 0;
     }
 
     .popular-card .img {
-        width: 40%;
-        min-width: 40%;
-        height: 140px;
+        width: 38%;
+        flex: 0 0 38%;
+        height: 125px;
+        padding: 5px;
     }
 
     .popular-card .img img {
         width: 100%;
-        height: 140px;
+        height: 115px;
         object-fit: cover;
+        border-radius: 10px;
     }
 
     .popular-content {
-        padding: 10px 15px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        width: 62%;
+        padding: 8px 10px;
+        margin: 0;
     }
 
     .popular-content h3 {
-        font-size: 15px;
+        font-size: 14px;
+        line-height: 1.2;
         margin: 0;
     }
 
     .popular-content p {
-        font-size: 13px;
-        margin: 5px 0;
+        font-size: 12px;
+        margin: 4px 0;
     }
 
     .star {
-        font-size: 12px;
+        font-size: 10px;
+        margin-left: 0;
     }
 
-
-    /* -------------------------
+    /* =====================================================
        ACTIVITÉS
-       ------------------------- */
+       ===================================================== */
 
     .Activites {
-        margin-top: 40px;
+        width: 100%;
+        margin-top: 30px;
     }
 
     .Activites h2 {
-        font-size: 22px;
+        font-size: 21px;
         margin-bottom: 20px;
     }
 
     .activites-conteneur {
+        width: 100%;
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 18px;
     }
 
     .carte-tres-grande,
     .carte-tres-petite {
         width: 100%;
-        height: 200px;
+        height: 190px;
+        min-height: 190px;
+        border-radius: 15px;
     }
 
     .carte-tres-grande img,
     .carte-tres-petite img {
         width: 100%;
-        height: 150px;
+        height: 140px;
         object-fit: cover;
     }
 
@@ -969,22 +906,23 @@ footer {
     }
 
     .colonne {
+        width: 100%;
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 18px;
     }
 
-
-    /* -------------------------
+    /* =====================================================
        FOOTER
-       ------------------------- */
+       ===================================================== */
 
     footer {
+        width: 100%;
         display: flex;
         flex-direction: column;
         gap: 25px;
-        padding: 35px 25px;
         margin-top: 40px;
+        padding: 35px 25px;
     }
 
     footer > div {
@@ -993,11 +931,11 @@ footer {
 
     footer h3 {
         font-size: 16px;
-        margin-bottom: 10px;
+        margin: 0 0 10px;
     }
 
     footer p {
-        font-size: 14px;
-        margin: 8px 0;
+        font-size: 13px;
+        margin: 7px 0;
     }
 }
