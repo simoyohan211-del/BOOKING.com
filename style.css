@@ -52,7 +52,7 @@ header {
 .Header {
     width: 100%;
     max-width: 1400px;
-    margin: 0 auto;
+    margin: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -94,12 +94,11 @@ main {
     width: 100%;
     max-width: 1400px;
     margin: 0 auto;
-    padding: 0 4%;
 }
 
 .Introduction h1 {
     margin: 0 0 10px;
-    font-size: clamp(21px, 2vw, 28px);
+    font-size: clamp(21px, 2vw, 25px);
     line-height: 1.25;
 }
 
@@ -262,7 +261,7 @@ main {
 }
 
 .Hebergement h2 {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 .Types-hébergements {
@@ -275,7 +274,7 @@ main {
 .Types {
     width: 100%;
     min-width: 0;
-    height: 215px;
+    height: 190px;
     padding: 5px;
     background-color: white;
     border-radius: 15px;
@@ -309,7 +308,7 @@ main {
 .stars,
 .star {
     color: #0065fc;
-    font-size: 11px;
+    font-size: 13px;
     margin-left: 0;
 }
 
@@ -397,7 +396,7 @@ main {
 }
 
 .popular-content p {
-    margin: 5px 0;
+    margin-top: -20px;
     font-size: 13px;
 }
 
@@ -456,7 +455,7 @@ main {
 .carte-tres-grande h3,
 .carte-tres-petite h3,
 .activites-conteneur h3 {
-    margin: 10px 15px;
+    margin: 20px 15px;
     font-size: 15px;
     line-height: 1.2;
 }
